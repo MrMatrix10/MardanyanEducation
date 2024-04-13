@@ -1,0 +1,359 @@
+*{
+  box-sizing:border-box;/*Чтобы ничего не выезжало за пределы страницы*/
+}
+/*Здесь я подключил шрифты*/
+/* Italic */
+@font-face {
+	font-family: 'Jost-Italic'; 
+	src: url(/assets/fonts/Jost-Italic.ttf); 
+}
+ 
+/*Обычный */
+@font-face {
+	font-family: 'Jost'; 
+	src: url(/assets/fonts/Jost.ttf); 
+}
+
+/*Описание сайта*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost';
+}
+
+header {
+  display: flex;/**/
+  justify-content: space-between;/*Элементы выравниваются по краям*/
+  align-items: center;/*Элементы выравниваются по центру и по вертикали*/
+  padding: 20px;
+  background-color: #131024;
+}
+
+.logo img {
+width: 90%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff8f8;
+  font-weight: bold;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* Премиущества */
+
+.services {
+  padding: 90px 0;
+  background-color:#FFF;
+}
+
+.textcontainer{
+  width: 891px;
+  color: #141024;
+font-family: 'Jost';
+font-size: 30px;
+font-style: normal;
+line-height: 160%; 
+margin-left: 100px;
+}
+
+.services-row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap; /*определяет фактор сжатия */
+  margin-right: 41px;
+}
+
+.service-card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+
+
+.service-card-title {
+  color: #D52027;
+font-family: 'Jost';
+font-size: 70px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; 
+margin-left: 100px;
+}
+
+.service-card p {
+  color: rgba(20, 16, 36, 0.70); 
+  font-size: 18px; 
+  font-family: 'Jost'; 
+  font-weight: 400; 
+  line-height: 28.80px; 
+  word-wrap: break-word;
+  margin-top: -55px;
+  margin-left: 100px; 
+}
+
+/*Секция "Обратная связь"*/
+.feedback {
+  padding: 50px;
+  background-image: url(/assets/img/обратная\ связь.png) ;
+}
+
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.feedback h3 {
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  width: 476px;
+
+}
+
+  .feedback h5 {
+    color: #FFF;
+font-family: 'Jost';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%;
+  }
+
+form{
+margin-top: -200px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-left: 900px ;
+
+  
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="phone"]{
+  width: 500px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 5px;
+background: #F6F6F6;
+font-family: 'Jost';
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #141024;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Jost';
+  width: 506px;
+  height: 64px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left:903px ;
+  transition: rgba(0,0,0,0.3) 0.3s ease;
+}
+
+
+button[type="submit"]:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Подвал сайта*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #130124;
+  color: #fff;
+}
+
+footer li{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+  margin-bottom: 5px;
+}
+
+
+/*Рекламный баннер*/
+.mainscreen-slider-item__bg_1 {
+padding-top: 200px;/*С помощью него я переместил текст на нужное мне место*/
+background-image: url('../img/баннер2.png');
+background-size: cover ;height: 700px;
+width: 100%;
+box-sizing: border-box;/*Чтобы блок не выходил за пределы*/
+}
+
+
+.onetext {
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; 
+  margin-bottom: 0;
+  margin-left: 30px;  
+}
+
+.twotext {
+  color: #FFF;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%; 
+  margin-top: 0;
+  margin-left: 29px;
+}
+
+/*Для конпки записаться в школу*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #D52027;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin-right: 1160px;
+}
+/*Анимация кнопки*/
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Наши профессионалы */
+
+.center-title{
+color: #141024;
+ font-size: 50px;
+ font-family: 'Jost';
+ font-weight: 600;
+ line-height: 80px;
+ text-align: center;
+ margin-top: -50px;
+}
+
+.s-team {
+	padding: 100px 0;
+	background-color: #F9F9F9;
+}
+.team-row {
+	display: flex;
+	column-gap: 20px;
+  justify-content: center;  
+}
+.team-item {
+	box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+	height: 100%;
+	background-color: #fff;
+}
+
+.team-thumb img {
+  max-height:480px ;
+	max-width: 360px;
+	display: block;
+  border-radius:20px; 
+ color: #f9f9f9;
+}
+.team-body {
+	background-color: #fff;
+	padding: 20px 30px;
+}
+.team-profi {
+	text-transform: uppercase;/*С помощью этого свойтсва мы все буквы делаем заглавными в тексте*/
+	color: #C2C1C1;
+	margin-bottom: 5px;/*Пустое пространство в 5 пикселей*/
+}
+.team-name {
+	font-size: 22px;
+	font-weight: 700;/*Жирность текста*/
+}
+
+
+/* Анимация при наведении курсора на блок */
+.team-item:hover {
+  transform: translateY(-10px);/*Сдивгает вверх на 10 пикселей*/
+}
+
+/* Конец профессионалов*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Черновик по рекламному баннеру*/
+
+/*.mainscreen-slider-item__bg_1 p{
+  width: 50%;
+  font-size: 40px;
+  padding-left: 10%;
+  color: #fff;
+  margin: 0;
+padding-left: 15px;
+padding-right:10px;
+
+} */  
